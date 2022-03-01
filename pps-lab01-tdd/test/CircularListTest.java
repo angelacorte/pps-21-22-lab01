@@ -56,6 +56,7 @@ public class CircularListTest {
 
     @Test
     void TestNextWithStrategy(){
-        assertEquals(2,  circularList.next(element -> element%2 == 0).get());
+        SelectStrategy strategy = new EvenStrategyFactory().createStrategy();
+        assertEquals(2,  circularList.next(strategy).get());
     }
 }
