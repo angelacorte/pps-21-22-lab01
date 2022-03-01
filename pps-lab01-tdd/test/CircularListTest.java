@@ -20,7 +20,7 @@ public class CircularListTest {
     }
 
     @Test
-    void TestInitiallyEmpty(){
+    void TestInitiallyNotEmpty(){
         assertFalse(circularList.isEmpty());
     }
 
